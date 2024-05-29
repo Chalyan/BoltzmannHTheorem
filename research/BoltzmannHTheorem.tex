@@ -1,0 +1,379 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[american]{article}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setsansfont[Mapping=tex-text]{Times New Roman}
+\setmonofont{Times New Roman}
+\usepackage{geometry}
+\geometry{verbose}
+\usepackage{esint}
+
+\makeatletter
+\@ifundefined{date}{}{\date{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+
+\renewcommand{\baselinestretch}{1.5} 
+\sloppy
+
+\makeatother
+
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\begin{document}
+\title{ԱՆՀԱՎԱՍԱՐԱԿՇԻՌ ՊՐՈՑԵՍՆԵՐԻ ԹԵՐՄՈԴԻՆԱՄԻԿԱ ԵՎ ԿԻՆԵՏԻԿԱՅԻ ՀԱՐՑԵՐ}
+\author{Հետազոտական աշխատանք\\
+ Չալյան Գոռ Վարդանի\\
+ Ակադեմիկոս Գ․ Սահակյանի անվան տեսական ֆիզիկայի ամբիոն\\
+ Մագիստրատուրա 1-ին կուրս}
+
+\maketitle
+\global\long\def\contentsname{\lyxmathsym{Բովանդակություն}}%
+ 
+\global\long\def\refname{\lyxmathsym{Գրականություն}}%
+ \thispagestyle{empty} \newpage{}
+
+\tableofcontents{}
+
+\newpage{}
+
+\section{ԲԱՇԽՄԱՆ ՖՈՒՆԿՑԻԱՆ}
+
+$\;$
+
+Դիտարկենք չեզոք ատոմներից կամ մոլեկուլներից բաղկացած գազը, որի վիճակագրական
+նկարագրությունը տրվում է $f(t,q,p)$ բաշխման ֆունկցիայով՝ որոշված
+համապատասխան փուլային տարածությունում։ $f$-ն ընդհանուր առմամբ ֆունկցիա
+է ընդհանրացված կոորդինատներից և իմպուլսներից, իսկ ոչ ստացիոնար վիճակում՝
+նաև ժամանակից։ Նշանակենք $d\tau=dqdp$-ով մոլեկուլի փուլային տարածության
+էլեմենտը, որտեղ dq-ն և dp-ն պարունակում են համապատասխանաբար ըստ բոլոր
+կոորդինատների և իմպուլսների դիֆերենցյալները։ Հետևաբար, $fd\tau$-ն
+ծավալի $d\tau$ էլեմենտում մասնիկների միջին թիվն է։
+
+Մոլեկուլի ուղղորդված շարժումը դիտարկվում է դասական նկարագրությամբ,
+որը նկարագրվում է նրա իներցիայի կենտրոնի \textbf{r}=(x,y,z) կոորդինատներով,
+և, նրա՝ որպես ամբողջականության շարժման \textbf{p} իմպուլսով։ 
+
+Գազում մոլեկուլի պտտական շարժումը ևս դասական եղանակով է նկարագրվում։
+Այն տրվում է մոլեկուլի պտտական մոմենտի \textbf{M} վեկտորով։
+
+Մոլեկուլի պտտական շարժման անկյունային արագությունը կլինի $\dot{\varphi}\equiv\Omega=\frac{M}{I}$։
+Այդ արագության միջին արժեքն է $\bar{\Omega}\sim\frac{\bar{v}}{d}$,
+որտեղ d-ն մոլեկուլային չափերն են(միջմոլեկուլային փոխազդեցության հեռավորություններ),
+իսկ $\bar{v}$-ը՝ գծային արագությունների միջինը։ Տարբեր մոլեկուլներ
+ունի $\Omega$-ի տարբեր արժեքներ՝ տարբեր ձևով բաշխված դրանց միջինի
+շուրջ։ 
+
+Ենթադրենք t=0 պահին $\varphi=\varphi_{0}$ անկյունով և $\Omega$-ով
+մոլեկուլների բաշխումը տրվում է $f(\varphi_{0},\Omega)$ ֆունկցիայով։
+Առանձնացնենք միջին մասը, որն անկախ է $\varphi$-ից՝ 
+\begin{align*}
+f & =\bar{f}(\Omega)+f^{\prime}(\varphi_{0},\Omega),\\
+\bar{f}(\Omega) & =\frac{1}{2\pi}\intop_{0}^{2\pi}f(\varphi_{0},\Omega)\,d\varphi_{0}:
+\end{align*}
+Այստեղ $f^{\prime}(\varphi_{0},\Omega)$-ն 0-ին հավասարան միջին արժեքով
+անդամ է։ Հետագա էվոլյուցիայում, ազատ պտույտի արդյունքում բաշխումը
+ստանում է 
+\[
+f(\varphi,\Omega,t)=\bar{f}(\Omega)+f^{\prime}(\varphi-\Omega t,\Omega)
+\]
+տեսքը։ Ժամանակի ընթացքում $f^{\prime}$-ը դառնում է $\Omega$-ից արագ
+օսցիլացվող ֆունկցիա, որի բնութագրական $\Delta\Omega\sim\frac{2\pi}{t}$
+պարբերությունն ու ազատ վազքի ժամանակը դառնում են շատ փոքր՝ $\bar{\Omega}$-ի
+նկատմամբ։ Բոլոր ֆիզիկական մեծություններն էլ կախված են ըստ $\Omega$-ի
+բաշխման ֆունկցիայի միջինից, որում արագ փոփոխվող $f^{\prime}$-ը մեծ
+ներդրում չունի։ Հենց սա էլ մեզ թուլ է տալիս փոխարինել $f(\varphi,\Omega)$
+ֆունկցիան՝ $\bar{f}(\Omega)$-ով։
+
+$\Gamma$-ով նշանակենք այն բոլոր մեծությունների ամբողջականությունը՝
+բացառությամբ կոորդինատների և ժամանկի, որոնցից կախված է բաշխման ֆունկցիան։
+Փոիլային տարածության $d\tau$ էլեմենտից առանձնացնենք dV=dxdydz անդամը
+և մնացածը նշանակենք $d\Gamma$-ով։ $\Gamma$-ն մոլեկուլների շարժման
+ինտեգրալ է, որը մնում է հաստատուն մոլեկուլի՝ երկու հաջորդական բախումների
+միջը ազատ շարժման ժամանակ։
+
+Կատարենք նշանակում՝ 
+\[
+N(t,\boldsymbol{r})=\intop f(t,\boldsymbol{r},\Gamma)d\Gamma,
+\]
+որը գազի մասնիկների տարածական բաշխման խտությունն է։ NdV-ն ծավալի dV
+էլեմենտում մոլեկուլների միջին թիվն է։ 
+
+\section{ԴԵՏԱԼԻԶԱՑՎԱԾ ՀԱՎԱՍԱՐԱԿՇՌՈՒԹՅԱՆ ՍԿԶԲՈՒՆՔԸ}
+
+$\;$
+
+Դիտարկենք 2 մոլեկուլի բախում, որոնցից 1-ինի $\Gamma$-ն գտնվում է
+տրված $d\Gamma$ ինտեռվալում, իսկ 2-րդինը՝ $d\Gamma_{1}$-ում։ Բախումից
+հետո դրանց արժեքներն ընկնում են $d\Gamma^{\prime}$ և $d\Gamma_{1}^{\prime}$
+ինտեռվալներ։ Պարզության համար կգրենք, որ մոլեկուլները կատարում են
+$\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+անցումը։ Միավոր ժամանակում, գազի միավոր ծավալում այդպիսի բախումների
+թիվը հավասար է միավոր ծավալում մոլեկուլների $f(t,\boldsymbol{r},\Gamma)d\Gamma$
+թվի և դրանցից յուրաքանչյուրի բախվելու հավանականության արտադրյալին։
+Վերջինս համեմատակն է միավոր ծավալում $\Gamma_{1}$մոլեկուլների թվին՝
+$f(t,\boldsymbol{r},\Gamma_{1})d\Gamma_{1}$։ Այս կերպ, 1 վայրկյանում,
+1$\text{սմ}^{3}$ ծավալում $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+անցումներով պայմանավորված բախումների թիվը կլինի՝ 
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})ff_{1}d\Gamma d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:NOC}
+\end{equation}
+
+\begin{equation}
+d\sigma=\frac{\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})}{\mid\boldsymbol{v}-\boldsymbol{v_{1}}\mid}d\Gamma^{\prime}d\Gamma_{1}^{\prime}\label{eq:ESCS}
+\end{equation}
+մեծությունն ունի մակերեսի չափողականություն և իրենից ներկայացնում է
+բախումների էֆեկտիվ կտրվածքը։
+
+Ինչպես հայտնի է, բախման հավանականությունը ինվարիանտ է ժամանակային
+ինվերսիայի նկատմամբ։ $\Gamma^{T}$-ով նշանակենք ըստ ժամանակի ինվերսիայի
+$\Gamma$-ի փոփոխությունը։ Ժամանակային ինվերսիան փոխում է բոլոր իմպուլսների
+և մոմենտների նշանները, և եթե $\Gamma=(\boldsymbol{p},\boldsymbol{M})$,
+ապա $\Gamma^{T}=(-\boldsymbol{p},-\boldsymbol{M})$։ Քանի որ ժամանակային
+ինվերսիայի ժամանակ խառնվում են «մինչև» և «հետո» պահերը, ապա կունենանք՝
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})=\omega(\Gamma^{T},\Gamma_{1}^{T}\mid\Gamma^{\prime T},\Gamma_{1}^{\prime T}):\label{eq:DBP}
+\end{equation}
+
+Նշենք, որ այս առնչությունը վիճակագրական հավասարակշռության վիճակում
+ապահովում է դետալիզացված հավասարակշռության սկզբունքը, ըստ որի, հավասարակշռության
+վիճակում $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+բախումներով անցումների թիվը հավասար է $\Gamma^{\prime T},\Gamma_{1}^{\prime T}\rightarrow\Gamma^{T},\Gamma_{1}^{T}$
+բախումներով անցումների թվին։ Իսկապես, ներկայացնելով այս թվերը \eqref{eq:NOC}
+տեսքով, կստանանք՝ 
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})f_{0}f_{01}d\Gamma d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}=\omega(\Gamma^{T},\Gamma_{1}^{T}\mid\Gamma^{\prime T},\Gamma_{1}^{\prime T})f_{0}^{\prime}f_{01}^{\prime}d\Gamma^{T}d\Gamma_{1}^{T}d\Gamma^{\prime T}d\Gamma_{1}^{\prime T},\label{eq:LDBP}
+\end{equation}
+որտեղ $f_{0}$-ն Բոլցմանի հավասարակշիռ բաշխման ֆունկցիան է։ Տարածական
+ինվերսիայի ժամանակ փուլային տարածության ծավալի էլեմենտը չի փոխվում,
+հետևաբար \eqref{eq:LDBP}-ում կարող ենք ազատվել այդ անդամներից։ $t\rightarrow-t$
+անցման փոփոխման ժամանակ էներգիան պահպանվում է՝ $\varepsilon(\Gamma)=\varepsilon(\Gamma^{T})$։
+Քանի որ հավասարակշիռ բաշխման ֆունկցիան կախված է միայն էներգիայից՝
+\begin{equation}
+f_{0}(\Gamma)=const\cdot e^{-\varepsilon(\Gamma)/T},\label{eq:DistFunc}
+\end{equation}
+որտեղ T-ն ջերմաստիճանն է, ապա $f_{0}(\Gamma)=f_{0}(\Gamma^{T})$։
+Էներգիայի պահպանման $\varepsilon+\varepsilon_{1}=\varepsilon^{\prime}+\varepsilon_{1}^{\prime}$
+օրենքից հետևում է, որ 
+\begin{equation}
+f_{0}f_{01}=f_{0}^{\prime}f_{01}^{\prime},\label{eq:DistRel}
+\end{equation}
+և հետևաբար \eqref{eq:LDBP}-ից ստացվում է \eqref{eq:DBP}-ը։
+
+Ժամանակային ինվերսիայից բացի կատարենք նաև տարածական ինվերսիա։ Եթե
+մոլեկուլը օժտված չէ բավականաչափ սիմետրիայով, ապա տարածական ինվերսիայի
+ժամանակ այն կանցնի ստերեոիզոմերի։ Հակառակ դեպքում այն կմնա նույնը։
+
+$\Gamma^{TP}$-ով նշանակենք $\Gamma$-ի՝ տարածական և ժամանակային ինվերսիայի
+ենթարկվելուց փոփոխությունը։ Տարածական ինվերսիան փոխում է բևեռային
+վեկտորների նշանը, և թողում անփոփոխ աքսյալներինը։ Հետևաբար, եթե $\Gamma=(\boldsymbol{p},\boldsymbol{M})$,
+ապա $\Gamma^{TP}=(\boldsymbol{p},-\boldsymbol{M})$։ Այս դեպքում ևս՝
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})=\omega(\Gamma^{TP},\Gamma_{1}^{TP}\mid\Gamma^{\prime TP},\Gamma_{1}^{\prime TP}):\label{eq:DBPTP}
+\end{equation}
+
+Դիտարկենք $\omega$-ի ևս մեկ հատկություն, որը քվանտամեխանիկական է
+և կապված է դիսկրետ էներգիական անցումներով։ Ինչպես հայտնի է, տարբեր
+բախման պրոցեսների հավանականությունների ամպլիտուդները կազմում են ունիտ
+$\hat{S}$ մատրիցը՝ 
+\[
+\hat{S}^{+}\hat{S}=1,
+\]
+կամ մատրիցական տեսքով՝ 
+\[
+\sum_{n}S_{in}^{+}S_{nk}=\sum_{n}S_{ni}^{*}S_{nk}=\delta_{ik}:
+\]
+Մասնավոր դեպքում, եթե i=k` 
+\begin{equation}
+\sum_{n}\mid S_{ni}\mid^{2}=1:\label{eq:S1}
+\end{equation}
+$\mid S_{ni}\mid^{2}$-ն իրենից ներկայացնում է $i\rightarrow n$ անցման
+ժամանակ հարվածի հավանականությունը։ Հաշվի առնելով, $\hat{S}$ մատրիցի
+ունիտարությունը, նույն ձև կստանանք՝ 
+\begin{equation}
+\sum_{n}\mid S_{in}\mid^{2}=1:\label{eq:S2}
+\end{equation}
+Իրար հավասարեցնելով \eqref{eq:S1} և \eqref{eq:S2} արտահայտությունները
+և արտաքսելով i=n անդամը երկու գումարից էլ, կստանանք՝ 
+\[
+\sum_{n}\mid S_{in}\mid^{2}=\sum_{n}\mid S_{ni}\mid^{2},
+\]
+որն էլ $\omega$-ի տերմիններով կլինի 
+\begin{equation}
+\int\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})d\Gamma^{\prime}d\Gamma_{1}^{\prime}=\int\omega(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:IE}
+\end{equation}
+
+
+\section{ԲՈԼՑՄԱՆԻ ԿԻՆԵՏԻԿԱԿԱՆ ՀԱՎԱՍԱՐՈՒՄԸ}
+
+$\;$
+
+Եթե մասնիկների բախումներն անտեսենք, ապա մոլեկուլներից յուրաքանչյուրը
+կարելի է համարել փակ համակարգ, և ըստ Լիուվիլի թեորեմի(\cite{LSP})
+բաշխման ֆունկցիայի համար կունենանք՝ 
+\begin{equation}
+\frac{df}{dt}=0:\label{eq:LT}
+\end{equation}
+
+Արտաքին դաշտերի բացակայության դեպքում, ազատ շարժվող մոլեկուլի համար
+$\Gamma$-ն պահպանվում է և փոխվում է միայն դրա r կոորդինատը, և այդ
+արդյունքում՝ 
+\begin{equation}
+\frac{df}{dt}=\frac{\partial f}{\partial t}+\boldsymbol{v\nabla}f:\label{eq:EPD}
+\end{equation}
+
+Բախումները խախտում են հավասարակշռության \eqref{eq:LT} պայմանը, և
+դրա փոխարեն մտցվում է 
+\begin{equation}
+\frac{df}{dt}=\mathrm{St}f\label{eq:NLT}
+\end{equation}
+տեսքը, որտեղ $\mathrm{St}f$-ն բաշխման ֆունկցիայի փոփոխման արագությունն
+է՝ կախված բախումներից։ Միավորելով \eqref{eq:EPD} և \eqref{eq:NLT}
+հավասարումները, կստանանք՝ 
+\begin{equation}
+\frac{\partial f}{\partial t}=-\boldsymbol{v\nabla}f+\mathrm{St}f,\label{eq:PWStf}
+\end{equation}
+որից հետագայում ստացվող $dVd\Gamma(\boldsymbol{v\nabla}f)$ անդամը
+փուլային տարածությունում մասնիկների թվի նվազումն է՝ պայմանավորված
+դրանց ազատ շարժմամբ։
+
+Երկու մոլեկուլների բախման ժամանակ նրան $\Gamma$-ների արժեքները փոխվում
+են։ Այդ պատճառով մոլեկուլի կրած կամայական բախում նրան դուրս է բերում
+համապատասխան $d\Gamma$ ինտեռվալից։ Այդպիսի բախումները կոչվում են
+«հեռացման» պատահարներ։ $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+անցումներով պայմանավորված բախումների լրիվ թիվը միավոր ժամանակում,
+ծավալի dV էլեմենտում՝ տրված $\Gamma$-ի դեպքում, հավասար է 
+\[
+dVd\Gamma\int\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})ff_{1}d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:
+\]
+Պատահում են նաև այնպիսի բախումներ, որոնց դեպքում դիտվում է «հեռացման»
+պատահարների հակառակ պատկերը։ Այդպիսի բախումները կոչվում են «գալու»
+պատահարներ։ $\Gamma^{\prime},\Gamma_{1}^{\prime}\rightarrow\Gamma,\Gamma_{1}$
+անցումներով պայմանավորված բախումների լրիվ թիվը միավոր ժամանակում,
+ծավալի dV էլեմենտում՝ տրված $\Gamma$-ի դեպքում, հավասար է 
+\[
+dVd\Gamma\int\omega^{\prime}(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})f^{\prime}f_{1}^{\prime}d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:
+\]
+
+Բախումների ինտեգրալի համար կստանանք՝ 
+\begin{equation}
+\mathrm{St}f=\int(\omega^{\prime}f^{\prime}f_{1}^{\prime}-\omega ff_{1})d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:Stf1}
+\end{equation}
+Հաշվի առնելով ենթաինտեգրալային անդամներից $f$-ի և $f_{1}$-ի $\Gamma$-ից
+կախված չլինելը և \eqref{eq:IE}-ը, կստանանք՝ 
+\begin{equation}
+\mathrm{St}f=\int\omega^{\prime}(f^{\prime}f_{1}^{\prime}-ff_{1})d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:Stf2}
+\end{equation}
+
+Իմի բերելով ստացված հավասարումները, ձևակերպենք Բոլցմանի հավասարումը․
+\begin{equation}
+\frac{\partial f}{\partial t}+\boldsymbol{v\nabla}f=\int\omega^{\prime}(f^{\prime}f_{1}^{\prime}-ff_{1})d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:BoltzmannEq}
+\end{equation}
+
+Այս ձևակերպումն առաջին անգամ տվել է կինետիկական տեսության հիմնադիր
+Լյուդվիգ Բոլցմանի կողմից՝ 1872 թ․-ին։
+
+\section{ԲՈԼՑՄԱՆԻ H-ԹԵՈՐԵՄԸ}
+
+$\;$
+
+Ազատ թողնված գազը, որպես մակրոսկոպական փակ համակարգ, ձգտում է հավասարակշռության
+վիճակի։ Հետևաբար, անհավասարակշիռ բաշխման ֆունկցիայի էվոլյուցիան պետք
+է ուղեկցվի էնտրոպիայի մեծացմամբ։ Ինչպես հայտնի է(\cite{LSP}), անհավասարակշիռ
+մակրոսկոպական վիճակում գտնվող իդեալական գազի էնտրոպիան տրվում է 
+\begin{equation}
+S=\int fln\frac{e}{f}dVd\Gamma\label{eq:Ent}
+\end{equation}
+տեսքով։ Դիֆերենցելով \eqref{eq:Ent}-ը, կստանանք՝ 
+\begin{equation}
+\frac{dS}{dt}=\int\frac{\partial}{\partial t}\left(fln\frac{e}{f}\right)dVd\Gamma=-\int lnf\frac{\partial f}{\partial t}dVd\Gamma:\label{eq:EntDiff}
+\end{equation}
+
+Գազում հավասարակշռություն հաստատվում է մոլեկուլների բախումների արդյունքում,
+ապա էնտրոպիայի աճը պետք է կախված լինի բաշխման ֆունկցիայի՝ ըստ բախումների
+փոփոխությունը նկարագրող անդամից։ U(\textbf{r}) արտաքին դաշտի առկայությամբ
+\eqref{eq:PWStf}-ն ընդունում է 
+\begin{equation}
+\frac{\partial f}{\partial t}=-\boldsymbol{v\nabla}f-\boldsymbol{F}\frac{\partial f}{\partial p}+\mathrm{St}f\label{eq:PWUStf}
+\end{equation}
+տեսքը, որի աջ կողմի առաջին 2 անդամով էլ պայմանավորված է էնտրոպիայի
+վերոնշյալ փոփոխությունը։
+
+Դրանց ներդրումը էնտրոպիայի փոփոխությունում կլինի 
+\begin{equation}
+-\int lnf\left[-\boldsymbol{v}\frac{\partial f}{\partial r}-\boldsymbol{F}\frac{\partial f}{\partial p}\right]dVd\Gamma=\int\left[\boldsymbol{v}\frac{\partial}{\partial r}+\boldsymbol{F}\frac{\partial}{\partial p}\right]\left(fln\frac{e}{f}\right)dVd\Gamma:\label{eq:IIE}
+\end{equation}
+\eqref{eq:IIE}-ում 1-ին անդամը dV-ով ինտեգրելիս ըստ Գաոսի թեորեմի
+հավասարվում է 0, քանի որ $f$-ը 0 է ինտեգրման եզրերում։ Նույն պատճառով
+նաև 0 կդառնա 2-րդ անդամը՝ ըստ $d^{3}p$-ի ինտեգրելիս իմպուլսի անվերջ
+արժեքների պատճառով։
+
+Պարզեցված տեսքով, \eqref{eq:EntDiff}-ը կստանա 
+\begin{equation}
+\frac{dS}{dt}=-\int lnf\cdot\mathrm{St}fd\Gamma dV\label{eq:EntDiffS}
+\end{equation}
+տեսքը։
+
+Ներմուծենք հաշվման նոր մեխանիզմ։ Դիցուք $\varphi(\Gamma)$-ն որևէ
+ֆունկցիա է $\Gamma$-ից, և փորձենք հաշվել 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma\label{eq:phiInt}
+\end{equation}
+ինտեգրալի արժեքը: Ներկայացնելով բախման ինտեգրալը \eqref{eq:Stf1}
+տեսքով, կստանանք 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma=\int\varphi\omega(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})f^{\prime}f_{1}^{\prime}d^{4}\Gamma-\int\varphi\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})ff_{1}d^{4}\Gamma,\label{eq:phiIntExtend}
+\end{equation}
+որտեղ կատարվել է $d^{4}\Gamma\equiv d\Gamma d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}$
+նշանակումը։ Քանի որ ինտեգրումը կատարվում է ըստ բոլոր $\Gamma$ փոփոխականների,
+ապա կարելի է կատարել դրանց միջև կամայական տեղափոխություն։ Սկզբից կատարելով
+$\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+փոխարինում, \eqref{eq:phiIntExtend}-ում ստանում ենք 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma=\int(\varphi-\varphi^{\prime})\omega(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})f^{\prime}f_{1}^{\prime}d^{4}\Gamma:\label{eq:Changed1}
+\end{equation}
+Այժմ \eqref{eq:Changed1}-ում կրկին կատարելով $\Gamma,\Gamma^{\prime}\rightarrow\Gamma_{1},\Gamma_{1}^{\prime}$
+փոխարինումը և վերցնելով այդ ինտեգրալների կիսագումարը, կստանանք՝ 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma=\frac{1}{2}\int(\varphi+\varphi_{1}-\varphi^{\prime}-\varphi_{1}^{\prime})\omega^{\prime}f^{\prime}f_{1}^{\prime}d^{4}\Gamma,\label{eq:Changed2}
+\end{equation}
+որի մասնավոր դեպք կլինի($\varphi=1$) 
+\begin{equation}
+\int\mathrm{St}fd\Gamma=0\label{eq:Stf0}
+\end{equation}
+ ինտեգրալը։ \eqref{eq:Stf0}-ում տեղադրելով \eqref{eq:Stf2} առնչությունը,
+կստանանք՝ 
+\begin{equation}
+\int\mathrm{St}fd\Gamma=\int\omega^{\prime}(f^{\prime}f_{1}^{\prime}-ff_{1})d^{4}\Gamma=0:\label{eq:Stf0Extend}
+\end{equation}
+\eqref{eq:EntDiffS}-ում կիրառելով \eqref{eq:Changed2}-ը, ստանում
+ենք 
+\begin{equation}
+\frac{dS}{dt}=\frac{1}{2}\int\omega^{\prime}f^{\prime}f_{1}^{\prime}ln\frac{f^{\prime}f_{1}^{\prime}}{ff_{1}}d^{4}\Gamma dV=\frac{1}{2}\int\omega^{\prime}f^{\prime}f_{1}^{\prime}xlnxd^{4}\Gamma dV,\label{eq:EntDiffExtend}
+\end{equation}
+հավասարումը, որում \eqref{eq:phiInt} առնչությունում $\varphi(\Gamma)$
+ֆունկցիան $lnf$-ն է, և կատարված է $x\equiv\frac{f^{\prime}f_{1}^{\prime}}{ff_{1}}$
+նշանակումը։ \eqref{eq:EntDiffExtend}-ից հանելով \eqref{eq:Stf0Extend}-ի
+կեսը(անդամի արժեքը 0 է), կստանանք՝ 
+\begin{equation}
+\frac{dS}{dt}=\frac{1}{2}\int\omega^{\prime}f^{\prime}f_{1}^{\prime}\left(xlnx-x+1\right)d^{4}\Gamma dV:\label{eq:EntDiffF}
+\end{equation}
+\eqref{eq:EntDiffF}-ի փակագծով անդամը միշտ ոչ բացասակ է՝ x>0 դեպքում
+և հավասարվում է 0-ի միայն x=1 արժեքում, որն էլ համապատասխանում է հավասարակշռության
+վիճակին։ Վերջին գաղափարն էլ մաթեմատիկական տեսքով գրված կլինի 
+\begin{equation}
+\frac{dS}{dt}\geq0,\label{eq:EntDiffGeq}
+\end{equation}
+որն էլ հենց էնտրոպիայի աճման օրենքն է։
+\begin{thebibliography}{1}
+\bibitem{LPK} E.M. LIFSHITZ, L.P. PITAEVSKI, Physical Kinetics, Volume
+10 in Course of Theoretical Physics, 1981
+
+\bibitem{LSP} L.D. LANDAU, E.M. LIFSHITZ, Statistical Physics, Volume
+5 in Course of Theoretical Physics, 1980
+
+\end{thebibliography}
+
+\end{document}

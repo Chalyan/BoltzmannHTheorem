@@ -1,0 +1,1344 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+
+\renewcommand{\baselinestretch}{1.5} 
+\sloppy
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Times New Roman"
+\font_typewriter "default" "Times New Roman"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+ԱՆՀԱՎԱՍԱՐԱԿՇԻՌ ՊՐՈՑԵՍՆԵՐԻ ԹԵՐՄՈԴԻՆԱՄԻԿԱ ԵՎ ԿԻՆԵՏԻԿԱՅԻ ՀԱՐՑԵՐ
+\end_layout
+
+\begin_layout Author
+Հետազոտական աշխատանք
+\begin_inset Newline newline
+\end_inset
+
+ Չալյան Գոռ Վարդանի
+\begin_inset Newline newline
+\end_inset
+
+ Ակադեմիկոս Գ․ Սահակյանի անվան տեսական ֆիզիկայի ամբիոն
+\begin_inset Newline newline
+\end_inset
+
+ Մագիստրատուրա 1-ին կուրս
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\contentsname}{Բովանդակություն}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\refname}{Գրականություն}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ԲԱՇԽՄԱՆ ՖՈՒՆԿՑԻԱՆ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Դիտարկենք չեզոք ատոմներից կամ մոլեկուլներից բաղկացած գազը, որի վիճակագրական
+ նկարագրությունը տրվում է 
+\begin_inset Formula $f(t,q,p)$
+\end_inset
+
+ բաշխման ֆունկցիայով՝ որոշված համապատասխան փուլային տարածությունում։ 
+\begin_inset Formula $f$
+\end_inset
+
+-ն ընդհանուր առմամբ ֆունկցիա է ընդհանրացված կոորդինատներից և իմպուլսներից,
+ իսկ ոչ ստացիոնար վիճակում՝ նաև ժամանակից։ Նշանակենք 
+\begin_inset Formula $d\tau=dqdp$
+\end_inset
+
+-ով մոլեկուլի փուլային տարածության էլեմենտը, որտեղ dq-ն և dp-ն պարունակում
+ են համապատասխանաբար ըստ բոլոր կոորդինատների և իմպուլսների դիֆերենցյալները։
+ Հետևաբար, 
+\begin_inset Formula $fd\tau$
+\end_inset
+
+-ն ծավալի 
+\begin_inset Formula $d\tau$
+\end_inset
+
+ էլեմենտում մասնիկների միջին թիվն է։
+\end_layout
+
+\begin_layout Standard
+Մոլեկուլի ուղղորդված շարժումը դիտարկվում է դասական նկարագրությամբ, որը նկարագրվո
+ւմ է նրա իներցիայի կենտրոնի
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+r
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+=(x,y,z)
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ կոորդինատներով, և, նրա՝ որպես ամբողջականության շարժման 
+\series bold
+p
+\series default
+ իմպուլսով։ 
+\end_layout
+
+\begin_layout Standard
+Գազում մոլեկուլի պտտական շարժումը ևս դասական եղանակով է նկարագրվում։ Այն
+ տրվում է մոլեկուլի պտտական մոմենտի 
+\series bold
+M
+\series default
+ վեկտորով։
+\end_layout
+
+\begin_layout Standard
+Մոլեկուլի պտտական շարժման անկյունային արագությունը կլինի 
+\begin_inset Formula $\dot{\varphi}\equiv\Omega=\frac{M}{I}$
+\end_inset
+
+։ Այդ արագության միջին արժեքն է 
+\begin_inset Formula $\bar{\Omega}\sim\frac{\bar{v}}{d}$
+\end_inset
+
+, որտեղ d-ն մոլեկուլային չափերն են(միջմոլեկուլային փոխազդեցության հեռավորություն
+ներ), իսկ 
+\begin_inset Formula $\bar{v}$
+\end_inset
+
+-ը՝ գծային արագությունների միջինը։ Տարբեր մոլեկուլներ ունի 
+\begin_inset Formula $\Omega$
+\end_inset
+
+-ի տարբեր արժեքներ՝ տարբեր ձևով բաշխված դրանց միջինի շուրջ։ 
+\end_layout
+
+\begin_layout Standard
+Ենթադրենք t=0 պահին 
+\begin_inset Formula $\varphi=\varphi_{0}$
+\end_inset
+
+ անկյունով և 
+\begin_inset Formula $\Omega$
+\end_inset
+
+-ով մոլեկուլների բաշխումը տրվում է 
+\begin_inset Formula $f(\varphi_{0},\Omega)$
+\end_inset
+
+ ֆունկցիայով։ Առանձնացնենք միջին մասը, որն անկախ է 
+\begin_inset Formula $\varphi$
+\end_inset
+
+-ից՝ 
+\begin_inset Formula 
+\begin{align*}
+f & =\bar{f}(\Omega)+f^{\prime}(\varphi_{0},\Omega),\\
+\bar{f}(\Omega) & =\frac{1}{2\pi}\intop_{0}^{2\pi}f(\varphi_{0},\Omega)\,d\varphi_{0}:
+\end{align*}
+
+\end_inset
+
+Այստեղ 
+\begin_inset Formula $f^{\prime}(\varphi_{0},\Omega)$
+\end_inset
+
+-ն 0-ին հավասարան միջին արժեքով անդամ է։ Հետագա էվոլյուցիայում, ազատ պտույտի
+ արդյունքում բաշխումը ստանում է 
+\begin_inset Formula 
+\[
+f(\varphi,\Omega,t)=\bar{f}(\Omega)+f^{\prime}(\varphi-\Omega t,\Omega)
+\]
+
+\end_inset
+
+տեսքը։ Ժամանակի ընթացքում 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+-ը դառնում է 
+\begin_inset Formula $\Omega$
+\end_inset
+
+-ից արագ օսցիլացվող ֆունկցիա, որի բնութագրական 
+\begin_inset Formula $\Delta\Omega\sim\frac{2\pi}{t}$
+\end_inset
+
+ պարբերությունն ու ազատ վազքի ժամանակը դառնում են շատ փոքր՝ 
+\begin_inset Formula $\bar{\Omega}$
+\end_inset
+
+-ի նկատմամբ։ Բոլոր ֆիզիկական մեծություններն էլ կախված են ըստ 
+\begin_inset Formula $\Omega$
+\end_inset
+
+-ի բաշխման ֆունկցիայի միջինից, որում արագ փոփոխվող 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+-ը մեծ ներդրում չունի։ Հենց սա էլ մեզ թուլ է տալիս փոխարինել 
+\begin_inset Formula $f(\varphi,\Omega)$
+\end_inset
+
+ ֆունկցիան՝ 
+\begin_inset Formula $\bar{f}(\Omega)$
+\end_inset
+
+-ով։
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ով նշանակենք այն բոլոր մեծությունների ամբողջականությունը՝ բացառությամբ
+ կոորդինատների և ժամանկի, որոնցից կախված է բաշխման ֆունկցիան։ Փոիլային տարածությ
+ան 
+\begin_inset Formula $d\tau$
+\end_inset
+
+ էլեմենտից առանձնացնենք dV=dxdydz անդամը և մնացածը նշանակենք 
+\begin_inset Formula $d\Gamma$
+\end_inset
+
+-ով։ 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ն մոլեկուլների շարժման ինտեգրալ է, որը մնում է հաստատուն մոլեկուլի՝ երկու
+ հաջորդական բախումների միջը ազատ շարժման ժամանակ։
+\end_layout
+
+\begin_layout Standard
+Կատարենք նշանակում՝ 
+\begin_inset Formula 
+\[
+N(t,\boldsymbol{r})=\intop f(t,\boldsymbol{r},\Gamma)d\Gamma,
+\]
+
+\end_inset
+
+որը գազի մասնիկների տարածական բաշխման խտությունն է։ NdV-ն ծավալի dV էլեմենտում
+ մոլեկուլների միջին թիվն է։ 
+\end_layout
+
+\begin_layout Section
+ԴԵՏԱԼԻԶԱՑՎԱԾ ՀԱՎԱՍԱՐԱԿՇՌՈՒԹՅԱՆ ՍԿԶԲՈՒՆՔԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Դիտարկենք 2 մոլեկուլի բախում, որոնցից 1-ինի 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ն գտնվում է տրված 
+\begin_inset Formula $d\Gamma$
+\end_inset
+
+ ինտեռվալում, իսկ 2-րդինը՝ 
+\begin_inset Formula $d\Gamma_{1}$
+\end_inset
+
+-ում։ Բախումից հետո դրանց արժեքներն ընկնում են 
+\begin_inset Formula $d\Gamma^{\prime}$
+\end_inset
+
+ և 
+\begin_inset Formula $d\Gamma_{1}^{\prime}$
+\end_inset
+
+ ինտեռվալներ։ Պարզության համար կգրենք, որ մոլեկուլները կատարում են 
+\begin_inset Formula $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+\end_inset
+
+ անցումը։ Միավոր ժամանակում, գազի միավոր ծավալում այդպիսի բախումների թիվը
+ հավասար է միավոր ծավալում մոլեկուլների 
+\begin_inset Formula $f(t,\boldsymbol{r},\Gamma)d\Gamma$
+\end_inset
+
+ թվի և դրանցից յուրաքանչյուրի բախվելու հավանականության արտադրյալին։ Վերջինս
+ համեմատակն է միավոր ծավալում 
+\begin_inset Formula $\Gamma_{1}$
+\end_inset
+
+մոլեկուլների թվին՝ 
+\begin_inset Formula $f(t,\boldsymbol{r},\Gamma_{1})d\Gamma_{1}$
+\end_inset
+
+։ Այս կերպ, 1 վայրկյանում, 1
+\begin_inset Formula $\text{սմ}^{3}$
+\end_inset
+
+ ծավալում 
+\begin_inset Formula $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+\end_inset
+
+ անցումներով պայմանավորված բախումների թիվը կլինի՝ 
+\begin_inset Formula 
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})ff_{1}d\Gamma d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:NOC}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+d\sigma=\frac{\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})}{\mid\boldsymbol{v}-\boldsymbol{v_{1}}\mid}d\Gamma^{\prime}d\Gamma_{1}^{\prime}\label{eq:ESCS}
+\end{equation}
+
+\end_inset
+
+մեծությունն ունի մակերեսի չափողականություն և իրենից ներկայացնում է բախումների
+ էֆեկտիվ կտրվածքը։
+\end_layout
+
+\begin_layout Standard
+Ինչպես հայտնի է, բախման հավանականությունը ինվարիանտ է ժամանակային ինվերսիայի
+ նկատմամբ։ 
+\begin_inset Formula $\Gamma^{T}$
+\end_inset
+
+-ով նշանակենք ըստ ժամանակի ինվերսիայի 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ի փոփոխությունը։ Ժամանակային ինվերսիան փոխում է բոլոր իմպուլսների և մոմենտների
+ նշանները, և եթե 
+\begin_inset Formula $\Gamma=(\boldsymbol{p},\boldsymbol{M})$
+\end_inset
+
+, ապա 
+\begin_inset Formula $\Gamma^{T}=(-\boldsymbol{p},-\boldsymbol{M})$
+\end_inset
+
+։ Քանի որ ժամանակային ինվերսիայի ժամանակ խառնվում են «մինչև» և «հետո» պահերը,
+ ապա կունենանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})=\omega(\Gamma^{T},\Gamma_{1}^{T}\mid\Gamma^{\prime T},\Gamma_{1}^{\prime T}):\label{eq:DBP}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Նշենք, որ այս առնչությունը վիճակագրական հավասարակշռության վիճակում ապահովում
+ է դետալիզացված հավասարակշռության սկզբունքը, ըստ որի, հավասարակշռության
+ վիճակում 
+\begin_inset Formula $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+\end_inset
+
+ բախումներով անցումների թիվը հավասար է 
+\begin_inset Formula $\Gamma^{\prime T},\Gamma_{1}^{\prime T}\rightarrow\Gamma^{T},\Gamma_{1}^{T}$
+\end_inset
+
+ բախումներով անցումների թվին։ Իսկապես, ներկայացնելով այս թվերը 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NOC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ տեսքով, կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})f_{0}f_{01}d\Gamma d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}=\omega(\Gamma^{T},\Gamma_{1}^{T}\mid\Gamma^{\prime T},\Gamma_{1}^{\prime T})f_{0}^{\prime}f_{01}^{\prime}d\Gamma^{T}d\Gamma_{1}^{T}d\Gamma^{\prime T}d\Gamma_{1}^{\prime T},\label{eq:LDBP}
+\end{equation}
+
+\end_inset
+
+որտեղ 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+-ն Բոլցմանի հավասարակշիռ բաշխման ֆունկցիան է։ Տարածական ինվերսիայի ժամանակ
+ փուլային տարածության ծավալի էլեմենտը չի փոխվում, հետևաբար 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LDBP"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ում կարող ենք ազատվել այդ անդամներից։ 
+\begin_inset Formula $t\rightarrow-t$
+\end_inset
+
+ անցման փոփոխման ժամանակ էներգիան պահպանվում է՝ 
+\begin_inset Formula $\varepsilon(\Gamma)=\varepsilon(\Gamma^{T})$
+\end_inset
+
+։ Քանի որ հավասարակշիռ բաշխման ֆունկցիան կախված է միայն էներգիայից՝ 
+\begin_inset Formula 
+\begin{equation}
+f_{0}(\Gamma)=const\cdot e^{-\varepsilon(\Gamma)/T},\label{eq:DistFunc}
+\end{equation}
+
+\end_inset
+
+որտեղ T-ն ջերմաստիճանն է, ապա 
+\begin_inset Formula $f_{0}(\Gamma)=f_{0}(\Gamma^{T})$
+\end_inset
+
+։ Էներգիայի պահպանման 
+\begin_inset Formula $\varepsilon+\varepsilon_{1}=\varepsilon^{\prime}+\varepsilon_{1}^{\prime}$
+\end_inset
+
+ օրենքից հետևում է, որ 
+\begin_inset Formula 
+\begin{equation}
+f_{0}f_{01}=f_{0}^{\prime}f_{01}^{\prime},\label{eq:DistRel}
+\end{equation}
+
+\end_inset
+
+և հետևաբար 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LDBP"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ից ստացվում է 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:DBP"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը։
+\end_layout
+
+\begin_layout Standard
+Ժամանակային ինվերսիայից բացի կատարենք նաև տարածական ինվերսիա։ Եթե մոլեկուլը
+ օժտված չէ բավականաչափ սիմետրիայով, ապա տարածական ինվերսիայի ժամանակ այն
+ կանցնի ստերեոիզոմերի։ Հակառակ դեպքում այն կմնա նույնը։
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma^{TP}$
+\end_inset
+
+-ով նշանակենք 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ի՝ տարածական և ժամանակային ինվերսիայի ենթարկվելուց փոփոխությունը։ Տարածական
+ ինվերսիան փոխում է բևեռային վեկտորների նշանը, և թողում անփոփոխ աքսյալներինը։
+ Հետևաբար, եթե 
+\begin_inset Formula $\Gamma=(\boldsymbol{p},\boldsymbol{M})$
+\end_inset
+
+, ապա 
+\begin_inset Formula $\Gamma^{TP}=(\boldsymbol{p},-\boldsymbol{M})$
+\end_inset
+
+։ Այս դեպքում ևս՝ 
+\begin_inset Formula 
+\begin{equation}
+\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})=\omega(\Gamma^{TP},\Gamma_{1}^{TP}\mid\Gamma^{\prime TP},\Gamma_{1}^{\prime TP}):\label{eq:DBPTP}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Դիտարկենք 
+\begin_inset Formula $\omega$
+\end_inset
+
+-ի ևս մեկ հատկություն, որը քվանտամեխանիկական է և կապված է դիսկրետ էներգիական
+ անցումներով։ Ինչպես հայտնի է, տարբեր բախման պրոցեսների հավանականությունների
+ ամպլիտուդները կազմում են ունիտ 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ մատրիցը՝ 
+\begin_inset Formula 
+\[
+\hat{S}^{+}\hat{S}=1,
+\]
+
+\end_inset
+
+կամ մատրիցական տեսքով՝ 
+\begin_inset Formula 
+\[
+\sum_{n}S_{in}^{+}S_{nk}=\sum_{n}S_{ni}^{*}S_{nk}=\delta_{ik}:
+\]
+
+\end_inset
+
+Մասնավոր դեպքում, եթե i=k` 
+\begin_inset Formula 
+\begin{equation}
+\sum_{n}\mid S_{ni}\mid^{2}=1:\label{eq:S1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\mid S_{ni}\mid^{2}$
+\end_inset
+
+-ն իրենից ներկայացնում է 
+\begin_inset Formula $i\rightarrow n$
+\end_inset
+
+ անցման ժամանակ հարվածի հավանականությունը։ Հաշվի առնելով, 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ մատրիցի ունիտարությունը, նույն ձև կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\sum_{n}\mid S_{in}\mid^{2}=1:\label{eq:S2}
+\end{equation}
+
+\end_inset
+
+Իրար հավասարեցնելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:S1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ և 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:S2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ արտահայտությունները և արտաքսելով i=n անդամը երկու գումարից էլ, կստանանք՝
+ 
+\begin_inset Formula 
+\[
+\sum_{n}\mid S_{in}\mid^{2}=\sum_{n}\mid S_{ni}\mid^{2},
+\]
+
+\end_inset
+
+որն էլ 
+\begin_inset Formula $\omega$
+\end_inset
+
+-ի տերմիններով կլինի 
+\begin_inset Formula 
+\begin{equation}
+\int\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})d\Gamma^{\prime}d\Gamma_{1}^{\prime}=\int\omega(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:IE}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ԲՈԼՑՄԱՆԻ ԿԻՆԵՏԻԿԱԿԱՆ ՀԱՎԱՍԱՐՈՒՄԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Եթե մասնիկների բախումներն անտեսենք, ապա մոլեկուլներից յուրաքանչյուրը կարելի
+ է համարել փակ համակարգ, և ըստ Լիուվիլի թեորեմի(
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LSP"
+literal "true"
+
+\end_inset
+
+) բաշխման ֆունկցիայի համար կունենանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\frac{df}{dt}=0:\label{eq:LT}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Արտաքին դաշտերի բացակայության դեպքում, ազատ շարժվող մոլեկուլի համար 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ն պահպանվում է և փոխվում է միայն դրա r կոորդինատը, և այդ արդյունքում՝ 
+\begin_inset Formula 
+\begin{equation}
+\frac{df}{dt}=\frac{\partial f}{\partial t}+\boldsymbol{v\nabla}f:\label{eq:EPD}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Բախումները խախտում են հավասարակշռության 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ պայմանը, և դրա փոխարեն մտցվում է 
+\begin_inset Formula 
+\begin{equation}
+\frac{df}{dt}=\mathrm{St}f\label{eq:NLT}
+\end{equation}
+
+\end_inset
+
+տեսքը, որտեղ 
+\begin_inset Formula $\mathrm{St}f$
+\end_inset
+
+-ն բաշխման ֆունկցիայի փոփոխման արագությունն է՝ կախված բախումներից։ Միավորելով
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:EPD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ և 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NLT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ հավասարումները, կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial f}{\partial t}=-\boldsymbol{v\nabla}f+\mathrm{St}f,\label{eq:PWStf}
+\end{equation}
+
+\end_inset
+
+որից հետագայում ստացվող 
+\begin_inset Formula $dVd\Gamma(\boldsymbol{v\nabla}f)$
+\end_inset
+
+ անդամը փուլային տարածությունում մասնիկների թվի նվազումն է՝ պայմանավորված
+ դրանց ազատ շարժմամբ։
+\end_layout
+
+\begin_layout Standard
+Երկու մոլեկուլների բախման ժամանակ նրան 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ների արժեքները փոխվում են։ Այդ պատճառով մոլեկուլի կրած կամայական բախում
+ նրան դուրս է բերում համապատասխան 
+\begin_inset Formula $d\Gamma$
+\end_inset
+
+ ինտեռվալից։ Այդպիսի բախումները կոչվում են «հեռացման» պատահարներ։ 
+\begin_inset Formula $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+\end_inset
+
+ անցումներով պայմանավորված բախումների լրիվ թիվը միավոր ժամանակում, ծավալի
+ dV էլեմենտում՝ տրված 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ի դեպքում, հավասար է 
+\begin_inset Formula 
+\[
+dVd\Gamma\int\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})ff_{1}d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:
+\]
+
+\end_inset
+
+Պատահում են նաև այնպիսի բախումներ, որոնց դեպքում դիտվում է «հեռացման» պատահարներ
+ի հակառակ պատկերը։ Այդպիսի բախումները կոչվում են «գալու» պատահարներ։ 
+\begin_inset Formula $\Gamma^{\prime},\Gamma_{1}^{\prime}\rightarrow\Gamma,\Gamma_{1}$
+\end_inset
+
+ անցումներով պայմանավորված բախումների լրիվ թիվը միավոր ժամանակում, ծավալի
+ dV էլեմենտում՝ տրված 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ի դեպքում, հավասար է 
+\begin_inset Formula 
+\[
+dVd\Gamma\int\omega^{\prime}(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})f^{\prime}f_{1}^{\prime}d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Բախումների ինտեգրալի համար կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\mathrm{St}f=\int(\omega^{\prime}f^{\prime}f_{1}^{\prime}-\omega ff_{1})d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:Stf1}
+\end{equation}
+
+\end_inset
+
+Հաշվի առնելով ենթաինտեգրալային անդամներից 
+\begin_inset Formula $f$
+\end_inset
+
+-ի և 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+-ի 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ից կախված չլինելը և 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IE"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը, կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\mathrm{St}f=\int\omega^{\prime}(f^{\prime}f_{1}^{\prime}-ff_{1})d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:Stf2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Իմի բերելով ստացված հավասարումները, ձևակերպենք Բոլցմանի հավասարումը․ 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial f}{\partial t}+\boldsymbol{v\nabla}f=\int\omega^{\prime}(f^{\prime}f_{1}^{\prime}-ff_{1})d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}:\label{eq:BoltzmannEq}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Այս ձևակերպումն առաջին անգամ տվել է կինետիկական տեսության հիմնադիր Լյուդվիգ
+ Բոլցմանի կողմից՝ 1872 թ․-ին։
+\end_layout
+
+\begin_layout Section
+ԲՈԼՑՄԱՆԻ H-ԹԵՈՐԵՄԸ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ազատ թողնված գազը, որպես մակրոսկոպական փակ համակարգ, ձգտում է հավասարակշռության
+ վիճակի։ Հետևաբար, անհավասարակշիռ բաշխման ֆունկցիայի էվոլյուցիան պետք է
+ ուղեկցվի էնտրոպիայի մեծացմամբ։ Ինչպես հայտնի է(
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LSP"
+literal "true"
+
+\end_inset
+
+), անհավասարակշիռ մակրոսկոպական վիճակում գտնվող իդեալական գազի էնտրոպիան
+ տրվում է 
+\begin_inset Formula 
+\begin{equation}
+S=\int fln\frac{e}{f}dVd\Gamma\label{eq:Ent}
+\end{equation}
+
+\end_inset
+
+տեսքով։ Դիֆերենցելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ent"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը, կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\frac{dS}{dt}=\int\frac{\partial}{\partial t}\left(fln\frac{e}{f}\right)dVd\Gamma=-\int lnf\frac{\partial f}{\partial t}dVd\Gamma:\label{eq:EntDiff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Գազում հավասարակշռություն հաստատվում է մոլեկուլների բախումների արդյունքում,
+ ապա էնտրոպիայի աճը պետք է կախված լինի բաշխման ֆունկցիայի՝ ըստ բախումների
+ փոփոխությունը նկարագրող անդամից։ U(
+\series bold
+r
+\series default
+) արտաքին դաշտի առկայությամբ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:PWStf"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ն ընդունում է 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial f}{\partial t}=-\boldsymbol{v\nabla}f-\boldsymbol{F}\frac{\partial f}{\partial p}+\mathrm{St}f\label{eq:PWUStf}
+\end{equation}
+
+\end_inset
+
+տեսքը, որի աջ կողմի առաջին 2 անդամով էլ պայմանավորված է էնտրոպիայի վերոնշյալ
+ փոփոխությունը։
+\end_layout
+
+\begin_layout Standard
+Դրանց ներդրումը էնտրոպիայի փոփոխությունում կլինի 
+\begin_inset Formula 
+\begin{equation}
+-\int lnf\left[-\boldsymbol{v}\frac{\partial f}{\partial r}-\boldsymbol{F}\frac{\partial f}{\partial p}\right]dVd\Gamma=\int\left[\boldsymbol{v}\frac{\partial}{\partial r}+\boldsymbol{F}\frac{\partial}{\partial p}\right]\left(fln\frac{e}{f}\right)dVd\Gamma:\label{eq:IIE}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IIE"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ում 1-ին անդամը dV-ով ինտեգրելիս ըստ Գաոսի թեորեմի հավասարվում է 0, քանի
+ որ 
+\begin_inset Formula $f$
+\end_inset
+
+-ը 0 է ինտեգրման եզրերում։ Նույն պատճառով նաև 0 կդառնա 2-րդ անդամը՝ ըստ
+ 
+\begin_inset Formula $d^{3}p$
+\end_inset
+
+-ի ինտեգրելիս իմպուլսի անվերջ արժեքների պատճառով։
+\end_layout
+
+\begin_layout Standard
+Պարզեցված տեսքով, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:EntDiff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը կստանա 
+\begin_inset Formula 
+\begin{equation}
+\frac{dS}{dt}=-\int lnf\cdot\mathrm{St}fd\Gamma dV\label{eq:EntDiffS}
+\end{equation}
+
+\end_inset
+
+տեսքը։
+\end_layout
+
+\begin_layout Standard
+Ներմուծենք հաշվման նոր մեխանիզմ։ Դիցուք 
+\begin_inset Formula $\varphi(\Gamma)$
+\end_inset
+
+-ն որևէ ֆունկցիա է 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-ից, և փորձենք հաշվել 
+\begin_inset Formula 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma\label{eq:phiInt}
+\end{equation}
+
+\end_inset
+
+ինտեգրալի արժեքը: Ներկայացնելով բախման ինտեգրալը 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Stf1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ տեսքով, կստանանք 
+\begin_inset Formula 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma=\int\varphi\omega(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})f^{\prime}f_{1}^{\prime}d^{4}\Gamma-\int\varphi\omega(\Gamma^{\prime},\Gamma_{1}^{\prime}\mid\Gamma,\Gamma_{1})ff_{1}d^{4}\Gamma,\label{eq:phiIntExtend}
+\end{equation}
+
+\end_inset
+
+որտեղ կատարվել է 
+\begin_inset Formula $d^{4}\Gamma\equiv d\Gamma d\Gamma_{1}d\Gamma^{\prime}d\Gamma_{1}^{\prime}$
+\end_inset
+
+ նշանակումը։ Քանի որ ինտեգրումը կատարվում է ըստ բոլոր 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ փոփոխականների, ապա կարելի է կատարել դրանց միջև կամայական տեղափոխություն։
+ Սկզբից կատարելով 
+\begin_inset Formula $\Gamma,\Gamma_{1}\rightarrow\Gamma^{\prime},\Gamma_{1}^{\prime}$
+\end_inset
+
+ փոխարինում, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phiIntExtend"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ում ստանում ենք 
+\begin_inset Formula 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma=\int(\varphi-\varphi^{\prime})\omega(\Gamma,\Gamma_{1}\mid\Gamma^{\prime},\Gamma_{1}^{\prime})f^{\prime}f_{1}^{\prime}d^{4}\Gamma:\label{eq:Changed1}
+\end{equation}
+
+\end_inset
+
+Այժմ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Changed1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ում կրկին կատարելով 
+\begin_inset Formula $\Gamma,\Gamma^{\prime}\rightarrow\Gamma_{1},\Gamma_{1}^{\prime}$
+\end_inset
+
+ փոխարինումը և վերցնելով այդ ինտեգրալների կիսագումարը, կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\int\varphi(\Gamma)\mathrm{St}fd\Gamma=\frac{1}{2}\int(\varphi+\varphi_{1}-\varphi^{\prime}-\varphi_{1}^{\prime})\omega^{\prime}f^{\prime}f_{1}^{\prime}d^{4}\Gamma,\label{eq:Changed2}
+\end{equation}
+
+\end_inset
+
+որի մասնավոր դեպք կլինի(
+\begin_inset Formula $\varphi=1$
+\end_inset
+
+) 
+\begin_inset Formula 
+\begin{equation}
+\int\mathrm{St}fd\Gamma=0\label{eq:Stf0}
+\end{equation}
+
+\end_inset
+
+ ինտեգրալը։ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Stf0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ում տեղադրելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Stf2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ առնչությունը, կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\int\mathrm{St}fd\Gamma=\int\omega^{\prime}(f^{\prime}f_{1}^{\prime}-ff_{1})d^{4}\Gamma=0:\label{eq:Stf0Extend}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:EntDiffS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ում կիրառելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Changed2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ը, ստանում ենք 
+\begin_inset Formula 
+\begin{equation}
+\frac{dS}{dt}=\frac{1}{2}\int\omega^{\prime}f^{\prime}f_{1}^{\prime}ln\frac{f^{\prime}f_{1}^{\prime}}{ff_{1}}d^{4}\Gamma dV=\frac{1}{2}\int\omega^{\prime}f^{\prime}f_{1}^{\prime}xlnxd^{4}\Gamma dV,\label{eq:EntDiffExtend}
+\end{equation}
+
+\end_inset
+
+հավասարումը, որում 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phiInt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ առնչությունում 
+\begin_inset Formula $\varphi(\Gamma)$
+\end_inset
+
+ ֆունկցիան 
+\begin_inset Formula $lnf$
+\end_inset
+
+-ն է, և կատարված է 
+\begin_inset Formula $x\equiv\frac{f^{\prime}f_{1}^{\prime}}{ff_{1}}$
+\end_inset
+
+ նշանակումը։ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:EntDiffExtend"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ից հանելով 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Stf0Extend"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ի կեսը(անդամի արժեքը 0 է), կստանանք՝ 
+\begin_inset Formula 
+\begin{equation}
+\frac{dS}{dt}=\frac{1}{2}\int\omega^{\prime}f^{\prime}f_{1}^{\prime}\left(xlnx-x+1\right)d^{4}\Gamma dV:\label{eq:EntDiffF}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:EntDiffF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-ի փակագծով անդամը միշտ ոչ բացասակ է՝ x>0 դեպքում և հավասարվում է 0-ի միայն
+ x=1 արժեքում, որն էլ համապատասխանում է հավասարակշռության վիճակին։ Վերջին
+ գաղափարն էլ մաթեմատիկական տեսքով գրված կլինի 
+\begin_inset Formula 
+\begin{equation}
+\frac{dS}{dt}\geq0,\label{eq:EntDiffGeq}
+\end{equation}
+
+\end_inset
+
+որն էլ հենց էնտրոպիայի աճման օրենքն է։
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "LPK"
+literal "false"
+
+\end_inset
+
+ E.M.
+ LIFSHITZ, L.P.
+ PITAEVSKI, Physical Kinetics, Volume 10 in Course of Theoretical Physics,
+ 1981
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "LSP"
+literal "false"
+
+\end_inset
+
+ L.D.
+ LANDAU, E.M.
+ LIFSHITZ, Statistical Physics, Volume 5 in Course of Theoretical Physics,
+ 1980
+\end_layout
+
+\end_body
+\end_document
